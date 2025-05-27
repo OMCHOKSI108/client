@@ -10,19 +10,19 @@ export default {
         white: '#FFFFFF',
         black: '#000000',
         primary: {
-          DEFAULT: '#6366f1', // Indigo as primary color
-          light: '#818cf8',
-          dark: '#4f46e5',
+          DEFAULT: '#00ffff', // Neon Sky Blue
+          light: '#80ffff',
+          dark: '#00cccc',
         },
         secondary: {
-          DEFAULT: '#10b981', // Emerald as secondary color
-          light: '#34d399',
-          dark: '#059669',
+          DEFAULT: '#7700ff', // Electric Purple
+          light: '#9933ff',
+          dark: '#5500cc',
         },
         accent: {
-          DEFAULT: '#f43f5e', // Rose as accent color
-          light: '#fb7185',
-          dark: '#e11d48',
+          DEFAULT: '#ffff00', // Neon Volcanic Yellow
+          light: '#ffff66',
+          dark: '#cccc00',
         },
         dark: {
           DEFAULT: '#0f172a', // Slate dark
