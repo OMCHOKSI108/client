@@ -66,11 +66,11 @@ const ProjectCard = ({ project, index }) => {
               <p className="text-xs md:text-sm text-gray-300">{project.description}</p>
 
               {/* Tech Stack */}
-              <div className="flex flex-wrap gap-1.5 md:gap-2">
+              <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech, index) => (
                   <span
                     key={index}
-                    className="px-2 md:px-3 py-1 bg-[#00FF7F]/10 text-[#00FF7F] rounded-full text-xs"
+                    className="px-2 py-0.5 bg-sky-500/10 text-sky-500 rounded-full text-xs"
                   >
                     {tech}
                   </span>
@@ -78,24 +78,24 @@ const ProjectCard = ({ project, index }) => {
               </div>
 
               {/* Links */}
-              <div className="flex gap-3 md:gap-4">
+              <div className="flex space-x-4">
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-1.5 md:gap-2 text-white hover:text-[#00FF7F] transition-colors duration-300 animate-pulse"
+                  className="flex items-center space-x-2 text-sky-500 hover:text-white"
                 >
-                  <FiGithub className="w-4 h-4 md:w-5 md:h-5" />
-                  <span className="text-xs md:text-sm">GitHub</span>
+                  <FiGithub />
+                  <span>View Code</span>
                 </a>
                 <a
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-1.5 md:gap-2 text-white hover:text-[#00FF7F] transition-colors duration-300 animate-pulse"
+                  className="flex items-center space-x-2 text-sky-500 hover:text-white"
                 >
-                  <FiExternalLink className="w-4 h-4 md:w-5 md:h-5" />
-                  <span className="text-xs md:text-sm">Live Demo</span>
+                  <FiExternalLink />
+                  <span>Live Demo</span>
                 </a>
               </div>
             </div>
@@ -225,4 +225,4 @@ const ProjectTimeline = () => {
   );
 };
 
-export default ProjectTimeline; 
+export default ProjectTimeline;
