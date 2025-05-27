@@ -1,7 +1,13 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaFigma, FaPython, FaDatabase, FaCode } from 'react-icons/fa';
-import { SiTailwindcss, SiPandas, SiCplusplus, SiNumpy, SiMongodb, SiExpress, SiPostman, SiLinux } from 'react-icons/si';
+import {
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs,
+  FaGitAlt, FaFigma, FaPython, FaDatabase, FaCode
+} from 'react-icons/fa';
+import {
+  SiTailwindcss, SiPandas, SiCplusplus, SiNumpy,
+  SiMongodb, SiExpress, SiPostman, SiLinux
+} from 'react-icons/si';
 import { BiData } from 'react-icons/bi';
 import { DiScrum } from 'react-icons/di';
 import { useEffect, useState } from 'react';
@@ -22,52 +28,44 @@ const SkillCard = ({ icon: Icon, name, category }) => {
 };
 
 const TechnicalSkills = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
+    const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const skills = [
-    //{ icon: FaHtml5, name: 'HTML5', category: 'Web Development' },
-    //{ icon: FaCss3Alt, name: 'CSS3', category: 'Web Development' },
-    //{ icon: FaJs, name: 'JavaScript', category: 'Web Development' },
-    //{// icon: SiTailwindcss, name: 'Tailwind CSS', category: 'Web Development' },
-    //{ icon: FaReact, name: 'React.js', category: 'Web Development' },
-   // { icon: FaNodeJs, name: 'Node.js', category: 'Web Development' },
-    //{ icon: FaFigma, name: 'Figma', category: 'UI Design' },
+    { icon: FaHtml5, name: 'HTML5', category: 'Web Development' },
+    { icon: FaCss3Alt, name: 'CSS3', category: 'Web Development' },
+    { icon: FaJs, name: 'JavaScript', category: 'Web Development' },
+    { icon: SiTailwindcss, name: 'Tailwind CSS', category: 'Web Development' },
+    { icon: FaReact, name: 'React.js', category: 'Web Development' },
+    { icon: FaNodeJs, name: 'Node.js', category: 'Web Development' },
+    { icon: SiExpress, name: 'Express.js', category: 'Backend' },
     { icon: FaPython, name: 'Python', category: 'Programming' },
     { icon: SiPandas, name: 'Pandas', category: 'Data Science' },
-    { icon: SiCplusplus, name: 'C++', category: 'Programming' },
     { icon: SiNumpy, name: 'NumPy', category: 'Data Science' },
     { icon: BiData, name: 'Scikit-learn', category: 'Machine Learning' },
     { icon: DiScrum, name: 'Matplotlib', category: 'Data Visualization' },
+    { icon: SiCplusplus, name: 'C++', category: 'Programming' },
+    { icon: FaFigma, name: 'Figma', category: 'UI Design' },
     { icon: FaGitAlt, name: 'Git & GitHub', category: 'Version Control' },
-    //{ icon: SiPostman, name: 'Postman', category: 'API Testing' },
+    { icon: SiPostman, name: 'Postman', category: 'API Testing' },
+    { icon: SiMongodb, name: 'MongoDB', category: 'Database' },
+    { icon: FaDatabase, name: 'SQL', category: 'Database' },
     { icon: FaCode, name: 'VSCode', category: 'IDE' },
     { icon: SiLinux, name: 'Linux / Bash', category: 'Operating System' },
-    //{ icon: FaDatabase, name: 'MongoDB', category: 'Database' },
-    //{ icon: SiExpress, name: 'Express.js', category: 'Backend' },
   ];
 
-  // Duplicate skills array to create seamless loop
   const duplicatedSkills = [...skills, ...skills];
 
-  // Calculate animation distance based on screen width
   const getAnimationDistance = () => {
-    if (windowWidth < 640) return -800; // mobile
-    if (windowWidth < 1024) return -1200; // tablet
-    return -1500; // desktop
+    if (windowWidth < 640) return -800;
+    if (windowWidth < 1024) return -1200;
+    return -1500;
   };
 
   return (
@@ -88,14 +86,12 @@ const TechnicalSkills = () => {
         <div ref={ref} className="relative">
           <motion.div
             className="flex space-x-2 md:space-x-4"
-            animate={{
-              x: [0, getAnimationDistance()],
-            }}
+            animate={{ x: [0, getAnimationDistance()] }}
             transition={{
               x: {
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: windowWidth < 640 ? 15 : 20, // Faster on mobile
+                duration: windowWidth < 640 ? 15 : 20,
                 ease: "linear",
               },
             }}
