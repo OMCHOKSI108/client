@@ -14,9 +14,9 @@ const EducationCard = ({ data }) => {
       transition={{ duration: 0.4 }}
       className="mb-4 md:mb-6"
     >
-      <div className="bg-[#121212] backdrop-blur-sm border border-[#00FF7F]/20 rounded-lg p-3 md:p-4 shadow-lg hover:shadow-[#00FF7F]/20 transition-all duration-300">
+      <div className="bg-[#121212] backdrop-blur-sm border border-[#87CEEB]/20 rounded-lg p-3 md:p-4 shadow-lg hover:shadow-[#87CEEB]/20 transition-all duration-300">
         <div className="flex items-start space-x-2 md:space-x-3">
-          <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-[#00FF7F]/60">
+          <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-[#87CEEB]/600">
             <img
               src={data.logo}
               alt={`${data.institution} logo`}
@@ -27,12 +27,12 @@ const EducationCard = ({ data }) => {
             <h3 className="text-base md:text-lg font-bold text-white mb-1 font-poppins">
               {data.degree}
             </h3>
-            <p className="text-sm md:text-base text-[#00FF7F] font-semibold mb-1 font-poppins">
+            <p className="text-sm md:text-base text-[#87CEEB] font-semibold mb-1 font-poppins">
               {data.institution}
             </p>
             <div className="flex justify-between items-center text-gray-400 text-xs md:text-sm font-fira mb-2">
               <span>{data.duration}</span>
-              <span className="text-[#00FF7F]">{data.grade}</span>
+              <span className="text-[#87CEEB]">{data.grade}</span>
             </div>
             {data.details && (
               <ul className="list-disc list-inside text-gray-400 text-xs md:text-sm space-y-1">
@@ -58,9 +58,9 @@ const ExperienceCard = ({ data }) => {
       transition={{ duration: 0.4 }}
       className="mb-4 md:mb-6"
     >
-      <div className="bg-[#121212] backdrop-blur-sm border border-[#00FF7F]/20 rounded-lg p-3 md:p-4 shadow-lg hover:shadow-[#00FF7F]/20 transition-all duration-300">
+      <div className="bg-[#121212] backdrop-blur-sm border border-[#87CEEB]/20 rounded-lg p-3 md:p-4 shadow-lg hover:shadow-[#87CEEB]/20 transition-all duration-300">
         <div className="flex flex-col sm:flex-row sm:items-start space-y-2 sm:space-y-0 sm:space-x-3">
-          <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-[#00FF7F]/10 rounded-full flex items-center justify-center overflow-hidden">
+          <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-[#87CEEB]/10 rounded-full flex items-center justify-center overflow-hidden">
             <img
               src={data.logo}
               alt={`${data.organization} logo`}
@@ -69,7 +69,7 @@ const ExperienceCard = ({ data }) => {
           </div>
           <div className="flex-grow">
             <h3 className="text-base md:text-lg font-bold text-white mb-1">{data.title}</h3>
-            <p className="text-sm md:text-base text-[#00FF7F] mb-1">{data.organization}</p>
+            <p className="text-sm md:text-base text-[#87CEEB] mb-1">{data.organization}</p>
             <div className="flex flex-wrap gap-1 mb-2 text-xs md:text-sm">
               <span className="text-gray-400">{data.duration}</span>
               <span className="text-gray-400">•</span>
@@ -90,7 +90,7 @@ const ExperienceCard = ({ data }) => {
                 {data.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-2 py-0.5 bg-[#00FF7F]/10 text-[#00FF7F] rounded-full text-xs"
+                    className="px-2 py-0.5 bg-[#87CEEB]/10 text-[#87CEEB] rounded-full text-xs"
                   >
                     {skill}
                   </span>
@@ -127,15 +127,15 @@ const CertificationCard = ({ data }) => {
       transition={{ duration: 0.4 }}
       className="mb-4"
     >
-      <div className="bg-[#121212] backdrop-blur-sm border border-[#00FF7F]/20 rounded-lg p-4 shadow-lg hover:shadow-[#00FF7F]/20 transition-all duration-300">
+      <div className="bg-[#121212] backdrop-blur-sm border border-[#87CEEB]/20 rounded-lg p-4 shadow-lg hover:shadow-[#87CEEB]/20 transition-all duration-300">
         <div className="flex flex-col sm:flex-row sm:items-start space-y-2 sm:space-y-0 sm:space-x-3">
-          <div className="text-[#00FF7F] mt-1">
+          <div className="text-[#87CEEB] mt-1">
             {getIcon(data.type)}
           </div>
           <div className="flex-grow">
             <h3 className="text-md font-bold text-white">{data.title}</h3>
             <div className="flex flex-wrap items-center text-xs space-x-2 mb-2">
-              <span className="text-[#00FF7F]">{data.organization}</span>
+              <span className="text-[#87CEEB]">{data.organization}</span>
               <span className="text-gray-400">•</span>
               <span className="text-gray-400">{data.date}</span>
               <span className="text-gray-400">•</span>
@@ -165,19 +165,19 @@ const ProjectCard = ({ project }) => {
       transition={{ duration: 0.4 }}
       className="mb-6"
     >
-      <div className="bg-[#121212] backdrop-blur-sm border border-[#00FF7F]/20 rounded-lg p-4 shadow-lg hover:shadow-[#00FF7F]/20 transition-all duration-300">
+      <div className="bg-[#121212] backdrop-blur-sm border border-[#87CEEB]/20 rounded-lg p-4 shadow-lg hover:shadow-[#87CEEB]/20 transition-all duration-300">
         <div className="flex flex-col space-y-3">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start space-y-2 sm:space-y-0">
             <div>
               <h3 className="text-lg font-bold text-white">{project.title}</h3>
-              <p className="text-[#00FF7F] text-sm">{project.role} | {project.type}</p>
+              <p className="text-[#87CEEB] text-sm">{project.role} | {project.type}</p>
             </div>
             <div className="flex space-x-2">
               <a 
                 href={project.github} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#00FF7F]"
+                className="text-gray-400 hover:text-[#87CEEB]"
               >
                 <FiGithub className="w-4 h-4" />
               </a>
@@ -185,7 +185,7 @@ const ProjectCard = ({ project }) => {
                 href={project.live} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#00FF7F]"
+                className="text-gray-400 hover:text-[#87CEEB]"
               >
                 <FiExternalLink className="w-4 h-4" />
               </a>
@@ -196,7 +196,7 @@ const ProjectCard = ({ project }) => {
             {project.techStack.map((tech, index) => (
               <span
                 key={index}
-                className="px-2 py-0.5 bg-[#00FF7F]/10 text-[#00FF7F] rounded-full text-xs"
+                className="px-2 py-0.5 bg-[#87CEEB]/10 text-[#87CEEB] rounded-full text-xs"
               >
                 {tech}
               </span>
@@ -453,7 +453,7 @@ const ResumeNew = () => {
           viewport={{ once: true }}
           className="mb-10 md:mb-16"
         >
-          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#00FF7F]/20 pb-2">
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#87CEEB]/20 pb-2">
             Education
           </h3>
           <div className="space-y-3 md:space-y-4">
@@ -471,7 +471,7 @@ const ResumeNew = () => {
           viewport={{ once: true }}
           className="mb-10 md:mb-16"
         >
-          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#00FF7F]/20 pb-2">
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#87CEEB]/20 pb-2">
             Certifications
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -489,7 +489,7 @@ const ResumeNew = () => {
           viewport={{ once: true }}
           className="mb-10 md:mb-16"
         >
-          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#00FF7F]/20 pb-2">
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#87CEEB]/20 pb-2">
             Projects
           </h3>
           <div className="space-y-4">
@@ -507,7 +507,7 @@ const ResumeNew = () => {
           viewport={{ once: true }}
           className="mb-10 md:mb-16"
         >
-          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#00FF7F]/20 pb-2">
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#87CEEB]/20 pb-2">
             Experience
           </h3>
           
@@ -544,14 +544,14 @@ const ResumeNew = () => {
           viewport={{ once: true }}
           className="mb-10 md:mb-16"
         >
-          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#00FF7F]/20 pb-2">
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 font-fira border-b border-[#87CEEB]/20 pb-2">
             Achievements
           </h3>
-          <div className="bg-[#121212] backdrop-blur-sm border border-[#00FF7F]/20 rounded-lg p-6 shadow-lg">
+          <div className="bg-[#121212] backdrop-blur-sm border border-[#87CEEB]/20 rounded-lg p-6 shadow-lg">
             <div className="flex flex-col space-y-6">
               <div>
                 <div className="flex items-center space-x-3 mb-3">
-                  <FaAward className="text-[#00FF7F] w-5 h-5" />
+                  <FaAward className="text-[#87CEEB] w-5 h-5" />
                   <h4 className="text-white font-semibold text-base">Data Science Treasure Hunt</h4>
                 </div>
                 <p className="text-gray-400">2nd Rank Among 40 teams</p>
@@ -559,7 +559,7 @@ const ResumeNew = () => {
               
               <div>
                 <div className="flex items-center space-x-3 mb-3">
-                  <FaCode className="text-[#00FF7F] w-5 h-5" />
+                  <FaCode className="text-[#87CEEB] w-5 h-5" />
                   <h4 className="text-white font-semibold text-base">ImmunoQuest: The deep learning hackathon</h4>
                 </div>
                 <p className="text-gray-400">Secured Top 9 Position in Leaderboard among 50+ experienced Teams </p>
@@ -576,7 +576,7 @@ const ResumeNew = () => {
             onClick={() => {
               window.location.href = '/Resume.pdf';
             }}
-            className="px-4 md:px-6 py-2 md:py-3 border-2 border-[#00FF7F] text-[#00FF7F] rounded-md hover:bg-[#00FF7F] hover:text-[#121212] transition-colors duration-300 flex items-center space-x-2 font-fira text-sm md:text-base"
+            className="px-4 md:px-6 py-2 md:py-3 border-2 border-[#00FF7F] text-[#87CEEB] rounded-md hover:bg-[#00FF7F] hover:text-[#121212] transition-colors duration-300 flex items-center space-x-2 font-fira text-sm md:text-base"
           >
             <FaDownload className="w-4 h-4 md:w-5 md:h-5" />
             <span>Download CV</span>
