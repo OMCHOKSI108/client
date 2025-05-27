@@ -1,30 +1,21 @@
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaYoutub              <div className="absolute inset-0 bg-red-500/20 blur-xl" />
-              
-              {/* Outer semi-circle (top half), dashed border */}FaXTwitter, FaInstagram, FaDiscord, FaDownload } from 'react-icons/fa6';
+import { 
+  FaGithub, 
+  FaLinkedin, 
+  FaYoutube, 
+  FaXTwitter, 
+  FaInstagram, 
+  FaDiscord, 
+  FaDownload 
+} from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 import dhairya from '../assets/dhairya-portrait.png';
-//import FeedbackModal from './FeedbackModal';
-//import FeedbackList from './FeedbackList';
 
 const Hero = () => {
-  //const [showFeedback, setShowFeedback] = useState(false);
-
-  // useEffect(() => {
-  //   const hasSubmittedFeedback = localStorage.getItem('hasSubmittedFeedback');
-  //   if (!hasSubmittedFeedback) {
-  //     const timer = setTimeout(() => {
-  //       setShowFeedback(true);
-  //     }, 10000); // Show after 10 seconds
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, []);
-
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/DEVang0876' },
     { icon: FaLinkedin, href: 'https://www.linkedin.com/in/devang0876/' },
     { icon: FaInstagram, href: 'https://www.instagram.com/__deviiinee_/' },
-   // { icon: FaDiscord, href: 'https://discord.com/users/dhairyagothi' },
     { icon: FaXTwitter, href: 'https://x.com/DevangDhandhuk1' },
   ];
 
@@ -51,7 +42,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center text-white">
+    <section id="home" className="min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Column */}
@@ -62,23 +53,14 @@ const Hero = () => {
             className="space-y-6 md:space-y-8 order-2 md:order-1"
           >
             <motion.div variants={itemVariants} className="space-y-4">
-              <motion.span
-                variants={itemVariants}
-                className="text-[#00FF7F] text-sm uppercase tracking-wider font-fira"
-              >
+              <motion.span className="text-red-500 text-sm uppercase tracking-wider font-fira">
                 AI and Data Science Engineer
               </motion.span>
-              <motion.h1
-                variants={itemVariants}
-                className="text-3xl md:text-6xl font-bold font-fira"
-              >
+              <motion.h1 className="text-3xl md:text-6xl font-bold font-fira">
                 Hello I'm{' '}
-                <span className="text-[#00FF7F]">Devang</span>
+                <span className="text-red-500">Devang</span>
               </motion.h1>
-              <motion.p
-                variants={itemVariants}
-                className="text-base md:text-lg text-gray-300 max-w-lg font-fira"
-              >
+              <motion.p className="text-base md:text-lg text-gray-300 max-w-lg font-fira">
                 I excel at crafting elegant digital experiences that combine
                 technical precision with creative innovation.
               </motion.p>
@@ -115,18 +97,13 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Column */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-            className="relative order-1 md:order-2 mb-8 md:mb-0"
-          >
+          {/* Right Column - Profile Image */}
+          <motion.div className="relative order-1 md:order-2 mb-8 md:mb-0">
             <div className="relative w-[20rem] md:w-[26rem] h-[20rem] md:h-[26rem] mx-auto">
               {/* Neon glow effect */}
-              <div className="absolute inset-0 rounded-full bg-[#00FF7F]/20 blur-xl" />
+              <div className="absolute inset-0 bg-red-500/20 blur-xl" />
               
-              {/* Outer semi-circle (top half), dashed border */}
+              {/* Rotating circles */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
@@ -136,7 +113,6 @@ const Hero = () => {
                 }}
               />
 
-              {/* Inner semi-circle (bottom half), dotted border */}
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
@@ -158,15 +134,8 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      
-      {/* Feedback Components */}
-      {/* <FeedbackModal
-        isOpen={showFeedback}
-        onClose={() => setShowFeedback(false)}
-      /> */}
-      {/* <FeedbackList onOpenFeedback={() => setShowFeedback(true)} /> */}
     </section>
   );
 };
 
-export default Hero; 
+export default Hero;
