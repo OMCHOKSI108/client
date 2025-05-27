@@ -147,7 +147,7 @@ const Hero = () => {
               />
 
               {/* Image container */}
-              <div className="absolute inset-16 md:inset-20 rounded-full overflow-hidden border-2 border-[#00FF7F]/30 flex items-center justify-center">
+              <div className="absolute inset-16 md:inset-20 rounded-full overflow-hidden border-2 border-red-500/30 flex items-center justify-center">
                 <img
                   src={dhairya}
                   alt="Devang"
