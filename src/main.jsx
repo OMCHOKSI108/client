@@ -16,11 +16,11 @@ createRoot(document.getElementById('root')).render(
           style: {
             background: '#1a1a1a',
             color: '#fff',
-            border: '1px solid #00FF7F',
+            border: '1px solid #87CEEB',
           },
           success: {
             iconTheme: {
-              primary: '#00FF7F',
+              primary: '#87CEEB',
               secondary: '#1a1a1a',
             },
           },

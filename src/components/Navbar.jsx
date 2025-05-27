@@ -74,8 +74,8 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold font-poppins"
           >
-            <Link to="/" className="text-white hover:text-sky-500 transition-colors duration-300">
-              Devang<span className="text-sky-500">.</span>
+            <Link to="/" className="text-white hover:text-[#87CEEB] transition-colors duration-300">
+              Devang<span className="text-[#87CEEB]">.</span>
             </Link>
           </motion.div>
 
@@ -90,14 +90,14 @@ const Navbar = () => {
                 <Link
                   to={link.path}
                   onClick={(e) => handleSectionClick(e, link.path)}
-                  className="text-white hover:text-sky-500 transition-colors duration-300 text-sm tracking-wider uppercase font-fira"
+                  className="text-white hover:text-[#87CEEB] transition-colors duration-300 text-sm tracking-wider uppercase font-fira"
                 >
                   {link.name}
                 </Link>
               </motion.div>
             ))}
             <motion.button
-              className="px-4 py-2 border-2 border-sky-500 text-sky-500 rounded-md hover:bg-sky-500 hover:text-[#121212] transition-colors duration-300 font-fira"
+              className="px-4 py-2 border-2 border-[#87CEEB] text-[#87CEEB] rounded-md hover:bg-[#87CEEB] hover:text-[#121212] transition-colors duration-300 font-fira"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => {
@@ -150,7 +150,7 @@ const Navbar = () => {
                       handleSectionClick(e, link.path);
                       setIsOpen(false);
                     }}
-                    className="text-white hover:text-[#00FF7F] transition-colors duration-300 text-lg tracking-wider uppercase font-fira"
+                    className="text-white hover:text-[#87CEEB] transition-colors duration-300 text-lg tracking-wider uppercase font-fira"
                   >
                     {link.name}
                   </Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
                 onClick={() => {
                   window.location.href = '/hire-me';
                 }}
-                className="px-6 py-3 border-2 border-[#00FF7F] text-[#00FF7F] rounded-md hover:bg-[#00FF7F] hover:text-[#121212] transition-colors duration-300 font-fira"
+                className="px-6 py-3 border-2 border-[#87CEEB] text-[#87CEEB] rounded-md hover:bg-[#87CEEB] hover:text-[#121212] transition-colors duration-300 font-fira"
               >
                 Hire me
               </motion.button>

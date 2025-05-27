@@ -50,7 +50,7 @@ const Lightbox = ({ project, onClose }) => {
           />
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white hover:text-[#00FF7F]"
+            className="absolute top-4 right-4 text-white hover:text-[#87CEEB]"
           >
             ×
           </button>
@@ -63,7 +63,7 @@ const Lightbox = ({ project, onClose }) => {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-[#00FF7F] hover:text-white"
+              className="flex items-center space-x-2 text-[#87CEEB] hover:text-white"
             >
               <FaGithub />
               <span>View Code</span>
@@ -72,7 +72,7 @@ const Lightbox = ({ project, onClose }) => {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-[#00FF7F] hover:text-white"
+              className="flex items-center space-x-2 text-[#87CEEB] hover:text-white"
             >
               <FaExternalLinkAlt />
               <span>Live Demo</span>
@@ -163,7 +163,7 @@ const Portfolio = () => {
           </motion.h2>
           <motion.div
             variants={itemVariants}
-            className="w-24 h-1 bg-[#00FF7F] mx-auto"
+            className="w-24 h-1 bg-[#87CEEB] mx-auto"
           />
         </motion.div>
 
@@ -194,4 +194,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio; 
+export default Portfolio;

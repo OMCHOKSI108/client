@@ -15,7 +15,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
           <p className="text-gray-500 text-sm">
-Old me makes me Perfect ✨🔥  </p>
+            Old me makes me Perfect ✨🔥
+          </p>
           <div className="flex space-x-6">
             {socialLinks.map((link, index) => (
               <a
@@ -38,4 +39,4 @@ Old me makes me Perfect ✨🔥  </p>
   );
 };
 
-export default Footer; 
+export default Footer;

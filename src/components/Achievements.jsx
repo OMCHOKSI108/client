@@ -17,10 +17,10 @@ const StatCard = ({ title, icon: Icon, children, index, buttonLink, buttonText, 
       whileHover={{ scale: 1.02 }}
       className="relative group"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-[#00BFFF]/10 via-transparent to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-      <div className="relative bg-gradient-to-br from-gray-800/50 via-gray-900/50 to-black/50 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-6 hover:border-[#00BFFF]/40 transition-all duration-300">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#87CEEB]/10 via-transparent to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+      <div className="relative bg-gradient-to-br from-gray-800/50 via-gray-900/50 to-black/50 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-6 hover:border-[#87CEEB]/40 transition-all duration-300">
         <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
-          <div className="text-[#00BFFF]">
+          <div className="text-[#87CEEB]">
             <Icon className="w-5 h-5 md:w-6 md:h-6" />
           </div>
           <h3 className="text-base md:text-lg font-bold text-white">{title}</h3>
@@ -34,7 +34,7 @@ const StatCard = ({ title, icon: Icon, children, index, buttonLink, buttonText, 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1 md:py-1.5 bg-[#00BFFF] text-black font-bold rounded-lg hover:bg-[#009acd] transition-colors duration-300 text-xs md:text-sm w-max justify-center"
+          className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1 md:py-1.5 bg-[#87CEEB] text-black font-bold rounded-lg hover:bg-[#6CB2D1] transition-colors duration-300 text-xs md:text-sm w-max justify-center"
         >
           <ButtonIcon className="w-3.5 h-3.5 md:w-4 md:h-4" />
           <span>{buttonText}</span>
@@ -72,7 +72,7 @@ const Achievements = () => {
             initial={{ scaleX: 0 }}
             animate={inView ? { scaleX: 1 } : { scaleX: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="w-20 md:w-24 h-1 bg-[#00BFFF] mx-auto"
+            className="w-20 md:w-24 h-1 bg-[#87CEEB] mx-auto"
           />
         </motion.div>
 

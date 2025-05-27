@@ -50,9 +50,9 @@ const CertificationCard = ({ data, index }) => {
       case 'admin':
         return 'bg-orange-500/20 text-orange-400';
       case 'expert':
-        return 'bg-green-500/20 text-green-400';
+        return 'bg-[#87CEEB]/20 text-[#87CEEB]';
       default:
-        return 'bg-yellow-500/20 text-yellow-400';;
+        return 'bg-yellow-500/20 text-yellow-400';
     }
   };
 
@@ -88,13 +88,13 @@ const CertificationCard = ({ data, index }) => {
       variants={cardVariants}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
-      whileHover={{ scale: 1.03, boxShadow: '0 0 20px rgba(0, 255, 127, 0.3)' }}
-      className="relative bg-white/5 backdrop-blur-md rounded-2xl p-4 md:p-6 border border-[#00FF7F]/20 hover:border-[#00FF7F]/40 transition-all duration-300"
+      whileHover={{ scale: 1.03, boxShadow: '0 0 20px rgba(135, 206, 235, 0.3)' }}
+      className="relative bg-white/5 backdrop-blur-md rounded-2xl p-4 md:p-6 border border-[#87CEEB]/20 hover:border-[#87CEEB]/40 transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="flex items-start justify-between mb-3 md:mb-4">
-        <div className="text-[#00FF7F]">
+        <div className="text-[#87CEEB]">
           {getIcon(data.type)}
         </div>
         <span className={`px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium ${getRoleColor(data.role)}`}>
@@ -103,7 +103,7 @@ const CertificationCard = ({ data, index }) => {
       </div>
       
       <h3 className="text-base md:text-xl font-bold text-white mb-1 md:mb-2">{data.title}</h3>
-      <p className="text-sm md:text-base text-[#00FF7F] mb-1 md:mb-2">{data.organization}</p>
+      <p className="text-sm md:text-base text-[#87CEEB] mb-1 md:mb-2">{data.organization}</p>
       <p className="text-xs md:text-sm text-gray-400 font-mono">{data.date}</p>
 
       <AnimatePresence>
@@ -131,7 +131,7 @@ const Certifications = () => {
       id: 1,
       title: 'Database Management System',
       organization: 'Girlscript Open Source Program',
-      date: 'April 2024',
+      date: 'April f2024',
       role: 'All India Topper TOP1%',
       type: 'Online',
       description: 'Achieved top 1% rank in the All India Database Management System competition. Demonstrated exceptional skills in SQL, database design, and optimization techniques.',
@@ -189,11 +189,11 @@ const Certifications = () => {
             variants={containerVariants}
             className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 font-fira"
           >
-             Certifications
+            Certifications
           </motion.h2>
           <motion.div
             variants={containerVariants}
-            className="w-20 md:w-24 h-1 bg-[#00FF7F] mx-auto"
+            className="w-20 md:w-24 h-1 bg-[#87CEEB] mx-auto"
           />
         </motion.div>
 

@@ -16,13 +16,13 @@ const SkillCard = ({ icon: Icon, name, category }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05, y: -5 }}
-      className="flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-[#00FF7F]/20 hover:border-[#00FF7F]/40 transition-all duration-300 mx-2"
+      className="flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-[#87CEEB]/20 hover:border-[#6CB2D1]/40 transition-all duration-300 mx-2"
     >
-      <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-3 text-[#00FF7F]">
+      <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-3 text-[#87CEEB]">
         <Icon className="w-8 h-8 md:w-10 md:h-10" />
       </div>
       <span className="text-white text-xs md:text-sm font-medium">{name}</span>
-      <span className="text-[#00FF7F]/60 text-[10px] md:text-xs mt-1">{category}</span>
+      <span className="text-[#87CEEB]/60 text-[10px] md:text-xs mt-1">{category}</span>
     </motion.div>
   );
 };
@@ -80,7 +80,7 @@ const TechnicalSkills = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-fira">
             Technical Skills
           </h2>
-          <div className="w-24 h-1 bg-[#00FF7F] mx-auto" />
+          <div className="w-24 h-1 bg-[#87CEEB] mx-auto" />
         </motion.div>
 
         <div ref={ref} className="relative">

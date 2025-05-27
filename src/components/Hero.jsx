@@ -53,12 +53,12 @@ const Hero = () => {
             className="space-y-6 md:space-y-8 order-2 md:order-1"
           >
             <motion.div variants={itemVariants} className="space-y-4">
-              <motion.span className="text-sky-500 text-sm uppercase tracking-wider font-fira">
+              <motion.span className="text-[#87CEEB] text-sm uppercase tracking-wider font-fira">
                 AI and Data Science Engineer
               </motion.span>
               <motion.h1 className="text-3xl md:text-6xl font-bold font-fira">
                 Hello I'm{' '}
-                <span className="text-sky-500">Devang</span>
+                <span className="text-[#87CEEB]">Devang</span>
               </motion.h1>
               <motion.p className="text-base md:text-lg text-gray-300 max-w-lg font-fira">
                 I excel at crafting elegant digital experiences that combine
@@ -73,7 +73,7 @@ const Hero = () => {
                 onClick={() => {
                   window.location.href = '/Resume.pdf';
                 }}
-                className="px-4 md:px-6 py-2 md:py-3 border-2 border-[#00FF7F] text-[#00FF7F] rounded-md hover:bg-[#00FF7F] hover:text-[#121212] transition-colors duration-300 flex items-center space-x-2 font-fira text-sm md:text-base"
+                className="px-4 md:px-6 py-2 md:py-3 border-2 border-[#87CEEB] text-[#87CEEB] rounded-md hover:bg-[#87CEEB] hover:text-[#121212] transition-colors duration-300 flex items-center space-x-2 font-fira text-sm md:text-base"
               >
                 <FaDownload />
                 <span>Download CV</span>
@@ -87,9 +87,9 @@ const Hero = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, color: '#00FF7F' }}
+                  whileHover={{ scale: 1.1, color: '#87CEEB' }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white flex items-center justify-center hover:border-[#00FF7F] transition-colors duration-300"
+                  className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white flex items-center justify-center hover:border-[#87CEEB] transition-colors duration-300"
                 >
                   <social.icon className="w-4 h-4 md:w-5 md:h-5" />
                 </motion.a>
@@ -101,13 +101,13 @@ const Hero = () => {
           <motion.div className="relative order-1 md:order-2 mb-8 md:mb-0">
             <div className="relative w-[20rem] md:w-[26rem] h-[20rem] md:h-[26rem] mx-auto">
               {/* Neon glow effect */}
-              <div className="absolute inset-0 bg-sky-500/20 blur-xl" />
+              <div className="absolute inset-0 bg-[#87CEEB]/20 blur-xl" />
               
               {/* Rotating circles */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-0.5 border-2 border-dashed border-sky-500 rounded-full"
+                className="absolute inset-0.5 border-2 border-dashed border-[#87CEEB] rounded-full"
                 style={{
                   clipPath: 'inset(0 0 50% 0)',
                 }}
@@ -116,14 +116,14 @@ const Hero = () => {
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-6 border-2 border-dotted border-sky-500 rounded-full"
+                className="absolute inset-6 border-2 border-dotted border-[#87CEEB] rounded-full"
                 style={{
                   clipPath: 'inset(50% 0 0 0)',
                 }}
               />
 
               {/* Image container */}
-              <div className="absolute inset-16 md:inset-20 rounded-full overflow-hidden border-2 border-sky-500/30 flex items-center justify-center">
+              <div className="absolute inset-16 md:inset-20 rounded-full overflow-hidden border-2 border-[#87CEEB]/30 flex items-center justify-center">
                 <img
                   src={dhairya}
                   alt="Devang"

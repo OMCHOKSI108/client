@@ -441,7 +441,7 @@ const ResumeNew = () => {
           </motion.h2>
           <motion.div
             variants={containerVariants}
-            className="w-20 md:w-24 h-1 bg-[#00FF7F] mx-auto"
+            className="w-20 md:w-24 h-1 bg-[#87CEEB] mx-auto"
           />
         </motion.div>
 
@@ -576,7 +576,7 @@ const ResumeNew = () => {
             onClick={() => {
               window.location.href = '/Resume.pdf';
             }}
-            className="px-4 md:px-6 py-2 md:py-3 border-2 border-[#00FF7F] text-[#87CEEB] rounded-md hover:bg-[#00FF7F] hover:text-[#121212] transition-colors duration-300 flex items-center space-x-2 font-fira text-sm md:text-base"
+            className="px-4 md:px-6 py-2 md:py-3 border-2 border-[#87CEEB] text-[#87CEEB] rounded-md hover:bg-[#87CEEB] hover:text-[#121212] transition-colors duration-300 flex items-center space-x-2 font-fira text-sm md:text-base mx-auto"
           >
             <FaDownload className="w-4 h-4 md:w-5 md:h-5" />
             <span>Download CV</span>
@@ -587,4 +587,4 @@ const ResumeNew = () => {
   );
 };
 
-export default ResumeNew; 
+export default ResumeNew;

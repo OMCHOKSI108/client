@@ -35,7 +35,7 @@ const TimelineDot = ({ index, total, inView }) => {
       initial={{ scale: 0 }}
       animate={inView ? { scale: 1 } : { scale: 0 }}
       transition={{ delay: index * 0.2 }}
-      className="absolute left-0 w-3 h-3 md:w-4 md:h-4 rounded-full bg-[#00FF7F] -translate-x-1/2 z-10"
+      className="absolute left-0 w-3 h-3 md:w-4 md:h-4 rounded-full bg-[#87CEEB] -translate-x-1/2 z-10"
       style={{ top: `${(index * 100) / (total - 1)}%` }}
     />
   );
@@ -77,13 +77,13 @@ const EducationCard = ({ data, index, inView }) => {
       className="relative w-full md:w-[calc(100%-3rem)] md:ml-16 mb-12"
     >
       <motion.div
-        whileHover={{ scale: 1.02, boxShadow: '0 0 20px rgba(0, 255, 127, 0.3)' }}
-        className="bg-[#121212] backdrop-blur-sm border border-[#00FF7F]/20 rounded-lg p-4 md:p-6 shadow-lg hover:shadow-[#00FF7F]/20 transition-all duration-300"
+        whileHover={{ scale: 1.02, boxShadow: '0 0 20px rgba(135, 206, 235, 0.3)' }}
+        className="bg-[#121212] backdrop-blur-sm border border-[#87CEEB]/20 rounded-lg p-4 md:p-6 shadow-lg hover:shadow-[#87CEEB]/20 transition-all duration-300"
       >
         <div className="flex items-start space-x-3 md:space-x-4">
           <motion.div
             variants={logoVariants}
-            className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-[#00FF7F]/60"
+            className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-[#87CEEB]/60"
           >
             <img
               src={data.logo}
@@ -95,12 +95,12 @@ const EducationCard = ({ data, index, inView }) => {
             <h3 className="text-base md:text-xl font-bold text-white mb-1 font-poppins truncate">
               {data.degree}
             </h3>
-            <p className="text-sm md:text-base text-[#00FF7F] font-semibold mb-2 font-poppins truncate">
+            <p className="text-sm md:text-base text-[#87CEEB] font-semibold mb-2 font-poppins truncate">
               {data.institution}
             </p>
             <div className="flex flex-col md:flex-row md:justify-between md:items-center text-xs md:text-sm text-gray-400 font-fira space-y-1 md:space-y-0">
               <span>{data.duration}</span>
-              <span className="text-[#00FF7F]">{data.grade}</span>
+              <span className="text-[#87CEEB]">{data.grade}</span>
             </div>
           </div>
         </div>
@@ -141,22 +141,22 @@ const EducationTimeline = () => {
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 font-fira">
             Education
           </h2>
-          <div className="w-20 md:w-24 h-1 bg-[#00FF7F] mx-auto" />
+          <div className="w-20 md:w-24 h-1 bg-[#87CEEB] mx-auto" />
         </motion.div>
 
         <div ref={ref} className="relative">
           {/* Timeline Line Container */}
-          <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-[#00FF7F]/20">
+          <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-[#87CEEB]/20">
             {/* Animated Line */}
             <motion.div
-              className="absolute top-0 left-0 w-full bg-[#00FF7F]"
+              className="absolute top-0 left-0 w-full bg-[#87CEEB]"
               style={{ 
                 height: lineHeight,
                 opacity: lineOpacity,
                 boxShadow: useTransform(
                   glowIntensity,
                   [0, 1],
-                  ['0 0 0px rgba(0, 255, 127, 0)', '0 0 30px rgba(0, 255, 127, 0.8)']
+                  ['0 0 0px rgba(135, 206, 235, 0)', '0 0 30px rgba(135, 206, 235, 0.8)']
                 )
               }}
             />
@@ -178,4 +178,4 @@ const EducationTimeline = () => {
   );
 };
 
-export default EducationTimeline; 
+export default EducationTimeline;

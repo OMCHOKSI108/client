@@ -17,12 +17,12 @@ const FloatingLabelInput = ({ label, type = 'text', value, onChange, required })
         onBlur={() => setIsFocused(value.length > 0)}
         required={required}
         name={label.toLowerCase()}
-        className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-3 md:px-4 py-2 md:py-3 text-sm md:text-base text-white focus:outline-none focus:border-[#00FF7F] transition-colors duration-300"
+        className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-3 md:px-4 py-2 md:py-3 text-sm md:text-base text-white focus:outline-none focus:border-[#87CEEB] transition-colors duration-300"
       />
       <label
         className={`absolute left-3 md:left-4 transition-all duration-300 ${
           isFocused || value.length > 0
-            ? '-top-2 text-xs text-[#00FF7F] bg-[#1a1a1a] px-1 md:px-2'
+            ? '-top-2 text-xs text-[#87CEEB] bg-[#1a1a1a] px-1 md:px-2'
             : 'top-2 md:top-3 text-xs md:text-sm text-gray-400'
         }`}
       >
@@ -45,12 +45,12 @@ const FloatingLabelTextarea = ({ label, value, onChange, required }) => {
         required={required}
         name={label.toLowerCase()}
         rows="4"
-        className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-3 md:px-4 py-2 md:py-3 text-sm md:text-base text-white focus:outline-none focus:border-[#00FF7F] transition-colors duration-300"
+        className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-3 md:px-4 py-2 md:py-3 text-sm md:text-base text-white focus:outline-none focus:border-[#87CEEB] transition-colors duration-300"
       />
       <label
         className={`absolute left-3 md:left-4 transition-all duration-300 ${
           isFocused || value.length > 0
-            ? '-top-2 text-xs text-[#00FF7F] bg-[#1a1a1a] px-1 md:px-2'
+            ? '-top-2 text-xs text-[#87CEEB] bg-[#1a1a1a] px-1 md:px-2'
             : 'top-2 md:top-3 text-xs md:text-sm text-gray-400'
         }`}
       >
@@ -194,7 +194,7 @@ const Contact = () => {
           </motion.h2>
           <motion.div
             variants={itemVariants}
-            className="w-20 md:w-24 h-1 bg-sky-500 mx-auto"
+            className="w-20 md:w-24 h-1 bg-[#87CEEB] mx-auto"
           />
         </motion.div>
 
@@ -208,14 +208,14 @@ const Contact = () => {
             className="space-y-6 md:space-y-8"
           >
             <motion.div variants={itemVariants} className="flex items-center space-x-3 md:space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#87CEEB] rounded-full flex items-center justify-center">
                 <FaEnvelope className="text-[#121212] w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
                 <h3 className="text-sm md:text-base font-bold text-white font-fira">Email</h3>
                 <a
                   href="mailto:devang454147@gmail.com"
-                  className="text-xs md:text-sm text-gray-400 hover:text-sky-500 transition-colors duration-300 font-poppins"
+                  className="text-xs md:text-sm text-gray-400 hover:text-[#87CEEB] transition-colors duration-300 font-poppins"
                 >
                   devang454147@gmail.com
                 </a>
@@ -223,19 +223,19 @@ const Contact = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex items-center space-x-3 md:space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#87CEEB] rounded-full flex items-center justify-center">
                 <FaPhone className="text-[#121212] w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
                 <h3 className="text-sm md:text-base font-bold text-white font-fira">Phone</h3>
-                <a href="tel:+919424065768" className="text-xs md:text-sm text-gray-400 hover:text-sky-500 transition-colors duration-300 font-poppins">
+                <a href="tel:+919424065768" className="text-xs md:text-sm text-gray-400 hover:text-[#87CEEB] transition-colors duration-300 font-poppins">
                   +91 94240 65768
                 </a>
               </div>
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex items-center space-x-3 md:space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#87CEEB] rounded-full flex items-center justify-center">
                 <FaLinkedin className="text-[#121212] w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
@@ -244,7 +244,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/devang0876/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-xs md:text-sm text-gray-400 hover:text-sky-500 transition-colors duration-300 font-poppins"
+                  className="text-xs md:text-sm text-gray-400 hover:text-[#87CEEB] transition-colors duration-300 font-poppins"
                 >
                   devang0876
                 </a>
@@ -252,7 +252,7 @@ const Contact = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex items-center space-x-3 md:space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#87CEEB] rounded-full flex items-center justify-center">
                 <FaGithub className="text-[#121212] w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
@@ -261,7 +261,7 @@ const Contact = () => {
                   href="https://github.com/DEVang0876" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-xs md:text-sm text-gray-400 hover:text-sky-500 transition-colors duration-300 font-poppins"
+                  className="text-xs md:text-sm text-gray-400 hover:text-[#87CEEB] transition-colors duration-300 font-poppins"
                 >
                   DEVang0876
                 </a>
@@ -313,7 +313,7 @@ const Contact = () => {
               className={`w-full py-2 md:py-3 px-4 md:px-6 rounded-lg text-sm md:text-base text-white font-bold ${
                 isSubmitting
                   ? 'bg-gray-600'
-                  : 'bg-[#00FF7F] hover:bg-[#00cc66]'
+                  : 'bg-[#87CEEB] hover:bg-[#6CB2D1]'
               } transition-colors duration-300 font-fira flex items-center justify-center`}
             >
               {isSubmitting ? (

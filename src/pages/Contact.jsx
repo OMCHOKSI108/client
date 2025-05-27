@@ -103,10 +103,10 @@ const Contact = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-[#1a1a1a] border border-gray-700 rounded-lg p-6 hover:border-[#00FF7F] transition-colors duration-300"
+                  className="bg-[#1a1a1a] border border-gray-700 rounded-lg p-6 hover:border-[#87CEEB] transition-colors duration-300"
                 >
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-[#00FF7F] rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#87CEEB] rounded-full flex items-center justify-center">
                       <info.icon className="text-[#121212] w-6 h-6" />
                     </div>
                     <div>
@@ -116,7 +116,7 @@ const Contact = () => {
                           href={info.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-[#00FF7F] transition-colors duration-300 font-poppins"
+                          className="text-gray-400 hover:text-[#87CEEB] transition-colors duration-300 font-poppins"
                         >
                           {info.value}
                         </a>
@@ -140,10 +140,10 @@ const Contact = () => {
                 <input
                   {...register('name', { required: 'Name is required' })}
                   placeholder="Your Name"
-                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-sky-500 transition-colors duration-300 font-poppins"
+                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#87CEEB] transition-colors duration-300 font-poppins"
                 />
                 {errors.name && (
-                  <p className="text-sky-500 text-sm mt-1">{errors.name.message}</p>
+                  <p className="text-[#87CEEB] text-sm mt-1">{errors.name.message}</p>
                 )}
               </div>
 
@@ -157,10 +157,10 @@ const Contact = () => {
                     }
                   })}
                   placeholder="Your Email"
-                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-sky-500 transition-colors duration-300 font-poppins"
+                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#87CEEB] transition-colors duration-300 font-poppins"
                 />
                 {errors.email && (
-                  <p className="text-sky-500 text-sm mt-1">{errors.email.message}</p>
+                  <p className="text-[#87CEEB] text-sm mt-1">{errors.email.message}</p>
                 )}
               </div>
 
@@ -175,10 +175,10 @@ const Contact = () => {
                   })}
                   placeholder="Your Message"
                   rows="5"
-                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-sky-500 transition-colors duration-300 font-poppins"
+                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#87CEEB] transition-colors duration-300 font-poppins"
                 />
                 {errors.message && (
-                  <p className="text-sky-500 text-sm mt-1">{errors.message.message}</p>
+                  <p className="text-[#87CEEB] text-sm mt-1">{errors.message.message}</p>
                 )}
               </div>
 
@@ -188,7 +188,7 @@ const Contact = () => {
                 className={`w-full py-3 px-6 rounded-lg text-white font-bold flex items-center justify-center space-x-2 ${
                   isSubmitting
                     ? 'bg-gray-600'
-                    : 'bg-[#00FF7F] hover:bg-[#00cc66]'
+                    : 'bg-[#87CEEB] hover:bg-[#6CB2D1]'
                 } transition-colors duration-300 font-fira`}
               >
                 {isSubmitting ? (

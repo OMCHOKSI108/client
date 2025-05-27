@@ -16,6 +16,7 @@ import Work from './pages/Work';
 import Contact from './pages/Contact';
 import HireMe from './pages/HireMe';
 
+
 const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-['Poppins'] overflow-x-hidden">
@@ -42,12 +43,12 @@ const App = () => {
           }
 
           ::-webkit-scrollbar-thumb {
-            background:rgb(103, 213, 230);
+            background: #87CEEB;
             border-radius: 3px;
           }
 
           ::-webkit-scrollbar-thumb:hover {
-            background:rgb(103, 213, 230);
+            background: #6CB2D1;
           }
 
           /* Container styles */
@@ -100,6 +101,7 @@ const App = () => {
           <Route path="/work" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/hire-me" element={<HireMe />} />
+          <Route path="/Services" element={<Services />} />
         </Routes>
       </main>
       <Footer />

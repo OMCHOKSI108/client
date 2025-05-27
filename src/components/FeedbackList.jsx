@@ -83,14 +83,14 @@
 //             animate={{ opacity: 1, y: 0, scale: 1 }}
 //             exit={{ opacity: 0, y: -20, scale: 0.95 }}
 //             transition={{ duration: 0.3 }}
-//             className="w-80 bg-[#1a1a1a]/90 backdrop-blur-sm border border-[#00FF7F]/30 rounded-lg p-4 shadow-lg relative"
+//             className="w-80 bg-[#1a1a1a]/90 backdrop-blur-sm border border-[#87CEEB]/30 rounded-lg p-4 shadow-lg relative"
 //           >
 //             {/* Close Button */}
 //             <motion.button
 //               whileHover={{ scale: 1.1 }}
 //               whileTap={{ scale: 0.95 }}
 //               onClick={handleClose}
-//               className="absolute -top-2 -right-2 w-6 h-6 bg-[#00FF7F] rounded-full flex items-center justify-center shadow-lg hover:bg-[#00cc66] transition-colors duration-300"
+//               className="absolute -top-2 -right-2 w-6 h-6 bg-[#87CEEB] rounded-full flex items-center justify-center shadow-lg hover:bg-[#6CB2D1] transition-colors duration-300"
 //             >
 //               <FaTimes className="text-[#121212] w-3 h-3" />
 //             </motion.button>
@@ -102,7 +102,7 @@
 //                     key={i}
 //                     className={`w-4 h-4 ${
 //                       i < feedbacks[currentIndex].rating
-//                         ? 'text-[#00FF7F]'
+//                         ? 'text-[#87CEEB]'
 //                         : 'text-gray-600'
 //                     }`}
 //                   />
@@ -132,7 +132,7 @@
 //           setIsPlaying(false);
 //           onOpenFeedback();
 //         }}
-//         className="w-12 h-12 bg-[#00FF7F] rounded-full flex items-center justify-center shadow-lg hover:bg-[#00cc66] transition-colors duration-300"
+//         className="w-12 h-12 bg-[#87CEEB] rounded-full flex items-center justify-center shadow-lg hover:bg-[#6CB2D1] transition-colors duration-300"
 //       >
 //         <FaComment className="text-[#121212] w-5 h-5" />
 //       </motion.button>
@@ -140,4 +140,4 @@
 //   );
 // };
 
-// export default FeedbackList; 
+// export default FeedbackList;
