@@ -10,53 +10,54 @@ export default {
         white: '#FFFFFF',
         black: '#000000',
         primary: {
-          DEFAULT: '#00ffdd', // Neon Cyan
-          light: '#80fff0',
-          dark: '#00ccb1',
-        },
-        secondary: {
-          DEFAULT: '#ff0099', // Hot Pink
-          light: '#ff4db8',
-          dark: '#cc007a',
-        },
-        accent: {
-          DEFAULT: '#ffff00', // Neon Yellow
+          DEFAULT: '#ffff00', // Bright Yellow
           light: '#ffff66',
           dark: '#cccc00',
         },
+        secondary: {
+          DEFAULT: '#ff0000', // Bright Red
+          light: '#ff4d4d',
+          dark: '#cc0000',
+        },
+        accent: {
+          DEFAULT: '#ff3300', // Orange-Red
+          light: '#ff704d',
+          dark: '#cc2900',
+        },
         highlight: {
-          DEFAULT: '#7700ff', // Electric Purple
-          light: '#9933ff',
-          dark: '#5500cc',
+          DEFAULT: '#ff0066', // Pink-Red
+          light: '#ff4d94',
+          dark: '#cc0052',
         },
         dark: {
-          DEFAULT: '#0a0a1f', // Deep Space Blue
-          lighter: '#1a1a3f',
-          darker: '#05050f',
+          DEFAULT: '#1a1a00', // Dark Yellow
+          lighter: '#333300',
+          darker: '#0d0d00',
         },
         light: {
-          DEFAULT: '#f0f0ff', // Cool White
-          darker: '#e6e6ff',
-          darkest: '#ccccff',
+          DEFAULT: '#ffffcc', // Light Yellow
+          darker: '#ffff99',
+          darkest: '#ffff66',
         },
         gray: {
-          50: '#f8f8ff',
-          100: '#f0f0ff',
-          200: '#e0e0ff',
-          300: '#c0c0ff',
-          400: '#9090ff',
-          500: '#6060ff',
-          600: '#4040cc',
-          700: '#303099',
-          800: '#202066',
-          900: '#101033',
+          50: '#fffff0',
+          100: '#ffffe6',
+          200: '#ffffcc',
+          300: '#ffff99',
+          400: '#ffff66',
+          500: '#ffff33',
+          600: '#ffff00',
+          700: '#cccc00',
+          800: '#999900',
+          900: '#666600',
         },
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-primary': 'linear-gradient(to right, #00ffdd, #7700ff)',
-        'gradient-accent': 'linear-gradient(45deg, #ff0099, #ffff00)',
-        'gradient-dark': 'linear-gradient(to bottom right, #0a0a1f, #1a1a3f)',
+      backgroundImage: {},
+      backgroundColor: {
+        page: '#ffff00',
+        section: '#ffff00',
+        card: '#ffff00',
+        accent: '#ff0000',
       },
     },
   },

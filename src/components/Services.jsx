@@ -19,7 +19,7 @@ const ServiceCard = ({ icon: Icon, title, description, index }) => {
       className="relative group"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-[#00FF7F]/10 via-transparent to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-      <div className="relative bg-gradient-to-br from-gray-800/50 via-gray-900/50 to-black/50 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 hover:border-[#00FF7F]/40 transition-all duration-300">
+      <div className="relative bg-page border border-accent rounded-2xl p-6 md:p-8 hover:border-[#00FF7F]/40 transition-all duration-300">
         <div className="text-[#00FF7F] mb-4 md:mb-6">
           <Icon className="w-8 h-8 md:w-12 md:h-12" />
         </div>
@@ -107,7 +107,7 @@ const services = [
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4 font-fira"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 md:mb-4 font-fira"
           >
             What I Do 
           </motion.h2>

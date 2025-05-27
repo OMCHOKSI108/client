@@ -65,23 +65,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-black/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-page border-b border-accent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-bold font-poppins"
-          >
-            <Link to="/" className="text-white hover:text-[#00FF7F] transition-colors duration-300">
-              Devang<span className="text-[#00FF7F]">.</span>
-            </Link>
-          </motion.div>
+          <Link to="/" className="text-2xl font-bold text-black">
+            {"<Devang />"}
+          </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <motion.div
@@ -92,21 +84,18 @@ const Navbar = () => {
                 <Link
                   to={link.path}
                   onClick={(e) => handleSectionClick(e, link.path)}
-                  className="text-white hover:text-[#00FF7F] transition-colors duration-300 text-sm tracking-wider uppercase font-fira"
+                  className="text-black hover:text-accent transition-colors duration-300 text-sm tracking-wider uppercase font-fira"
                 >
                   {link.name}
                 </Link>
               </motion.div>
             ))}
             <motion.button
-              className="px-4 py-2 border-2 border-[#00FF7F] text-[#00FF7F] rounded-md hover:bg-[#00FF7F] hover:text-[#121212] transition-colors duration-300 font-fira"
+              className="px-4 py-2 border-2 border-accent text-black hover:bg-accent hover:text-black transition-colors duration-300 font-fira"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => {
-                window.location.href = '/hire-me';
-              }}
             >
-              Hire me
+              Resume
             </motion.button>
           </div>
 
@@ -180,4 +169,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

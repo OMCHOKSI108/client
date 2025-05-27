@@ -6,7 +6,7 @@ const ProjectCard = ({ project, onOpen }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
-      className="relative group cursor-pointer"
+      className="relative group cursor-pointer bg-page"
       onClick={() => onOpen(project)}
     >
       <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
@@ -15,10 +15,10 @@ const ProjectCard = ({ project, onOpen }) => {
           alt={project.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <div className="absolute inset-0 bg-accent bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
           <div className="text-center">
-            <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-            <p className="text-gray-200">{project.description}</p>
+            <h3 className="text-xl font-bold text-black mb-2">{project.title}</h3>
+            <p className="text-black">{project.description}</p>
           </div>
         </div>
       </div>
@@ -146,7 +146,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="py-20">
+    <section id="portfolio" className="py-20 bg-page">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}
@@ -157,13 +157,13 @@ const Portfolio = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-3xl md:text-4xl font-bold text-white mb-4"
+            className="text-3xl md:text-4xl font-bold text-black mb-4"
           >
             Projects
           </motion.h2>
           <motion.div
             variants={itemVariants}
-            className="w-24 h-1 bg-[#00FF7F] mx-auto"
+            className="w-24 h-1 bg-accent mx-auto"
           />
         </motion.div>
 
@@ -194,4 +194,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio; 
+export default Portfolio;

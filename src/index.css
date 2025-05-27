@@ -2,12 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffff00 !important;
+  color: #000000;
+}
+
+section {
+  background: #ffff00 !important;
+}
+
+.bg-custom {
+  background: #ffff00 !important;
+}
+
+.section-bg {
+  background: #ffff00 !important;
+}
+
+.accent-section {
+  background: #ff0000 !important;
+}
+
+/* Override any dark backgrounds */
+[class*="bg-dark"], [class*="bg-gray"], [class*="bg-black"], [class*="backdrop-blur"] {
+  background: #ffff00 !important;
+}
+
+.card {
+  background-color: #ffff66 !important;
+  border: 1px solid #ff0000;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(255, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: #ff0000 !important;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #ff3300 !important;
+  color: white;
+}
+
+.gradient-text {
+  color: #ff0000;
+}
+
 @layer base {
   :root {
-    --color-primary: #00ffdd;
-    --color-secondary: #ff0099;
-    --color-accent: #ffff00;
-    --color-highlight: #7700ff;
+    --color-primary: #ffff00;
+    --color-secondary: #ff0000;
+    --color-accent: #ff3300;
+    --color-highlight: #ff0066;
   }
 
   html {
@@ -16,7 +70,10 @@
   }
 
   body {
-    @apply bg-gradient-to-br from-dark to-dark-lighter min-h-screen text-light;
+    @apply min-h-screen text-black;
+    background-color: #ffff00;
+    background-color: #ffff00;
+    color: #000000;
   }
 
   /* Neon text effect for headings */
@@ -53,6 +110,19 @@
   /* Gradient text */
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-primary;
+  }
+
+  /* Add solid background colors instead of gradients */
+  .bg-custom {
+    background-color: #ffff00;
+  }
+
+  .section-bg {
+    background-color: #ffff66;
+  }
+
+  .accent-section {
+    background-color: #ff0000;
   }
 }
 
