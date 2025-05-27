@@ -194,7 +194,7 @@ const Contact = () => {
           </motion.h2>
           <motion.div
             variants={itemVariants}
-            className="w-20 md:w-24 h-1 bg-[#00FF7F] mx-auto"
+            className="w-20 md:w-24 h-1 bg-sky-500 mx-auto"
           />
         </motion.div>
 
@@ -208,31 +208,34 @@ const Contact = () => {
             className="space-y-6 md:space-y-8"
           >
             <motion.div variants={itemVariants} className="flex items-center space-x-3 md:space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#00FF7F] rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-500 rounded-full flex items-center justify-center">
                 <FaEnvelope className="text-[#121212] w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
                 <h3 className="text-sm md:text-base font-bold text-white font-fira">Email</h3>
-                <a href="mailto:devang454147@gmail.com" className="text-xs md:text-sm text-gray-400 hover:text-[#00FF7F] transition-colors duration-300 font-poppins">
+                <a
+                  href="mailto:devang454147@gmail.com"
+                  className="text-xs md:text-sm text-gray-400 hover:text-sky-500 transition-colors duration-300 font-poppins"
+                >
                   devang454147@gmail.com
                 </a>
               </div>
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex items-center space-x-3 md:space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#00FF7F] rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-500 rounded-full flex items-center justify-center">
                 <FaPhone className="text-[#121212] w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
                 <h3 className="text-sm md:text-base font-bold text-white font-fira">Phone</h3>
-                <a href="tel:+919424065768" className="text-xs md:text-sm text-gray-400 hover:text-[#00FF7F] transition-colors duration-300 font-poppins">
+                <a href="tel:+919424065768" className="text-xs md:text-sm text-gray-400 hover:text-sky-500 transition-colors duration-300 font-poppins">
                   +91 94240 65768
                 </a>
               </div>
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex items-center space-x-3 md:space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#00FF7F] rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-500 rounded-full flex items-center justify-center">
                 <FaLinkedin className="text-[#121212] w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
@@ -241,7 +244,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/devang0876/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-xs md:text-sm text-gray-400 hover:text-[#00FF7F] transition-colors duration-300 font-poppins"
+                  className="text-xs md:text-sm text-gray-400 hover:text-sky-500 transition-colors duration-300 font-poppins"
                 >
                   devang0876
                 </a>
@@ -249,7 +252,7 @@ const Contact = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex items-center space-x-3 md:space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#00FF7F] rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-sky-500 rounded-full flex items-center justify-center">
                 <FaGithub className="text-[#121212] w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
@@ -258,7 +261,7 @@ const Contact = () => {
                   href="https://github.com/DEVang0876" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-xs md:text-sm text-gray-400 hover:text-[#00FF7F] transition-colors duration-300 font-poppins"
+                  className="text-xs md:text-sm text-gray-400 hover:text-sky-500 transition-colors duration-300 font-poppins"
                 >
                   DEVang0876
                 </a>

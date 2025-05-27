@@ -140,7 +140,7 @@ const Contact = () => {
                 <input
                   {...register('name', { required: 'Name is required' })}
                   placeholder="Your Name"
-                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#00FF7F] transition-colors duration-300 font-poppins"
+                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-sky-500 transition-colors duration-300 font-poppins"
                 />
                 {errors.name && (
                   <p className="text-sky-500 text-sm mt-1">{errors.name.message}</p>
@@ -157,7 +157,7 @@ const Contact = () => {
                     }
                   })}
                   placeholder="Your Email"
-                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#00FF7F] transition-colors duration-300 font-poppins"
+                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-sky-500 transition-colors duration-300 font-poppins"
                 />
                 {errors.email && (
                   <p className="text-sky-500 text-sm mt-1">{errors.email.message}</p>
@@ -175,7 +175,7 @@ const Contact = () => {
                   })}
                   placeholder="Your Message"
                   rows="5"
-                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#00FF7F] transition-colors duration-300 font-poppins"
+                  className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-sky-500 transition-colors duration-300 font-poppins"
                 />
                 {errors.message && (
                   <p className="text-sky-500 text-sm mt-1">{errors.message.message}</p>
