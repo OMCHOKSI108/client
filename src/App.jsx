@@ -18,7 +18,7 @@ import HireMe from './pages/HireMe';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-['Poppins'] overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#000B18] via-[#000B2E] to-[#000B3D] text-white font-['Poppins'] overflow-x-hidden">
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
