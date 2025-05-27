@@ -107,7 +107,7 @@ const Hero = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-0.5 border-2 border-dashed border-red-500 rounded-full"
+                className="absolute inset-0.5 border-2 border-dashed border-sky-500 rounded-full"
                 style={{
                   clipPath: 'inset(0 0 50% 0)',
                 }}
