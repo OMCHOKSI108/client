@@ -48,10 +48,7 @@ const ExperienceCard = ({ data, isLeft }) => {
 };
 
 const Experience = () => {
-  const [ref] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  const [ref] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   // const experienceData = {
   //   clubs: [
@@ -233,51 +230,27 @@ const experienceData = {
   };
 
   return (
-    <section id="experience" className="py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-10 md:py-16 bg-[#0a0a0a]" id="experience">
+      <div className="max-w-5xl mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">Experience</h2>
+
         <motion.div
+          ref={ref}
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="text-center mb-10 md:mb-16"
+          animate="show"
+          className="flex flex-col gap-8"
         >
-          <motion.h2
-            variants={containerVariants}
-            className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 font-fira"
-          >
-            Experience
-          </motion.h2>
-          <motion.div
-            variants={containerVariants}
-            className="w-20 md:w-24 h-1 bg-[#00FF7F] mx-auto"
-          />
+          {experienceData.clubs.map((exp, idx) => (
+            <ExperienceCard key={exp.id} data={exp} isLeft={idx % 2 === 0} />
+          ))}
+          {experienceData.other.map((exp, idx) => (
+            <ExperienceCard key={exp.id} data={exp} isLeft={idx % 2 === 0} />
+          ))}
         </motion.div>
-
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          {/* Technical Clubs Section */}
-          <div>
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8 font-fira">Technical Clubs</h3>
-            <div className="space-y-6 md:space-y-8">
-              {experienceData.clubs.map((data) => (
-                <ExperienceCard key={data.id} data={data} isLeft={true} />
-              ))}
-            </div>
-          </div>
-
-          {/* Other Experience Section */}
-          <div>
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8 font-fira">Other Experience</h3>
-            <div className="space-y-6 md:space-y-8">
-              {experienceData.other.map((data) => (
-                <ExperienceCard key={data.id} data={data} isLeft={false} />
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
 };
 
-export default Experience; 
+export default Experience;
