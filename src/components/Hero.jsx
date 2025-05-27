@@ -107,7 +107,7 @@ const Hero = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-0.5 border-2 border-dashed border-[#87CEEB] rounded-full"
+                className="absolute inset-0.5 border-2 border-dashed border-[#1E3A8A] rounded-full"
                 style={{
                   clipPath: 'inset(0 0 50% 0)',
                 }}
@@ -116,7 +116,7 @@ const Hero = () => {
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-6 border-2 border-dotted border-[#87CEEB] rounded-full"
+                className="absolute inset-6 border-2 border-dotted border-[#1E3A8A] rounded-full"
                 style={{
                   clipPath: 'inset(50% 0 0 0)',
                 }}
