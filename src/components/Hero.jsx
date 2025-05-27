@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaYoutube, FaXTwitter, FaInstagram, FaDiscord, FaDownload } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaYoutub              <div className="absolute inset-0 bg-red-500/20 blur-xl" />
+              
+              {/* Outer semi-circle (top half), dashed border */}FaXTwitter, FaInstagram, FaDiscord, FaDownload } from 'react-icons/fa6';
 import dhairya from '../assets/dhairya-portrait.png';
 //import FeedbackModal from './FeedbackModal';
 //import FeedbackList from './FeedbackList';
