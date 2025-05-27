@@ -334,4 +334,4 @@ const projects = [
   );
 };
 
-export default Work; 
+export default Work;
