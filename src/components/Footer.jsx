@@ -11,25 +11,26 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-8">
+    <footer className="py-8 bg-page border-t border-accent">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
-          <p className="text-gray-500 text-sm">
-Old me makes me Perfect ✨🔥  </p>
+          <p className="text-black text-sm">
+            Old me makes me Perfect ✨🔥
+          </p>
           <div className="flex space-x-6">
-            {socialLinks.map((link, index) => (
+            {socialLinks.map((social, index) => (
               <a
                 key={index}
-                href={link.href}
+                href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-black hover:text-accent transition-colors"
               >
-                <link.icon className="w-6 h-6" />
+                <social.icon className="w-6 h-6" />
               </a>
             ))}
           </div>
-          <p className="text-gray-500 text-sm">
+          <p className="text-black text-sm">
             © {new Date().getFullYear()} Devang Dhandhukiya. All rights reserved.
           </p>
         </div>
@@ -38,4 +39,4 @@ Old me makes me Perfect ✨🔥  </p>
   );
 };
 
-export default Footer; 
+export default Footer;

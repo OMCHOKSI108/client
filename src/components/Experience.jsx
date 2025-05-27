@@ -179,80 +179,6 @@ const Experience = () => {
             className="w-20 md:w-24 h-1 bg-accent mx-auto"
           />
         </motion.div>
-        logo: '',
-        duration: '',
-        location: '',
-        type: '',
-        description: '',
-        responsibilities: [
-          '',
-          '',
-        ],
-        skills: ['']
-      },
-      {
-        id: 5,
-        title: '',
-        organization: '',
-        logo: '',
-        duration: '',
-        location: '',
-        type:'',
-        description: "",
-        responsibilities: [
-          '',
-          '',
-        ],
-        skills: ['']
-      },
-      {
-        id: 6,
-        title: '',
-        organization: '',
-        logo: '',
-        duration: '',
-        location: '',
-        type:'',
-        description: "",
-        responsibilities: [
-          '',
-          '',
-        ],
-        skills: ['']
-      },
-    ],
-  };
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  return (
-    <section id="experience" className="py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="text-center mb-10 md:mb-16"
-        >
-          <motion.h2
-            variants={containerVariants}
-            className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 font-fira"
-          >
-            Experience
-          </motion.h2>
-          <motion.div
-            variants={containerVariants}
-            className="w-20 md:w-24 h-1 bg-[#00FF7F] mx-auto"
-          />
-        </motion.div>
 
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Technical Clubs Section */}
@@ -280,4 +206,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; 
+export default Experience;
