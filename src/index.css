@@ -3,21 +3,56 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-primary: #00ffdd;
+    --color-secondary: #ff0099;
+    --color-accent: #ffff00;
+    --color-highlight: #7700ff;
+  }
+
   html {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
   }
 
   body {
-    @apply bg-dark text-white;
+    @apply bg-gradient-to-br from-dark to-dark-lighter min-h-screen text-light;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
+  /* Neon text effect for headings */
+  h1, h2, h3 {
+    @apply font-bold;
+    text-shadow: 0 0 10px var(--color-primary),
+                0 0 20px var(--color-primary),
+                0 0 30px var(--color-primary);
   }
 
-  code, pre, .font-mono {
-    font-family: 'Fira Code', monospace;
+  /* Button styling */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-dark hover:bg-primary-light hover:shadow-lg hover:shadow-primary/50;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-light hover:shadow-lg hover:shadow-secondary/50;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-dark hover:bg-accent-light hover:shadow-lg hover:shadow-accent/50;
+  }
+
+  /* Card styling */
+  .card {
+    @apply bg-dark-lighter rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20;
+    border: 1px solid var(--color-primary);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-primary;
   }
 }
 

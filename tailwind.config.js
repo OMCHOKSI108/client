@@ -10,54 +10,53 @@ export default {
         white: '#FFFFFF',
         black: '#000000',
         primary: {
-          DEFAULT: '#00ffff', // Neon Sky Blue
-          light: '#80ffff',
-          dark: '#00cccc',
+          DEFAULT: '#00ffdd', // Neon Cyan
+          light: '#80fff0',
+          dark: '#00ccb1',
         },
         secondary: {
+          DEFAULT: '#ff0099', // Hot Pink
+          light: '#ff4db8',
+          dark: '#cc007a',
+        },
+        accent: {
+          DEFAULT: '#ffff00', // Neon Yellow
+          light: '#ffff66',
+          dark: '#cccc00',
+        },
+        highlight: {
           DEFAULT: '#7700ff', // Electric Purple
           light: '#9933ff',
           dark: '#5500cc',
         },
-        accent: {
-          DEFAULT: '#ffff00', // Neon Volcanic Yellow
-          light: '#ffff66',
-          dark: '#cccc00',
-        },
         dark: {
-          DEFAULT: '#0f172a', // Slate dark
-          lighter: '#1e293b',
-          darker: '#020617',
+          DEFAULT: '#0a0a1f', // Deep Space Blue
+          lighter: '#1a1a3f',
+          darker: '#05050f',
         },
         light: {
-          DEFAULT: '#f8fafc',
-          darker: '#f1f5f9',
-          darkest: '#e2e8f0',
+          DEFAULT: '#f0f0ff', // Cool White
+          darker: '#e6e6ff',
+          darkest: '#ccccff',
         },
         gray: {
-          50: '#f9fafb',
-          100: '#f3f4f6',
-          200: '#e5e7eb',
-          300: '#d1d5db',
-          400: '#9ca3af',
-          500: '#6b7280',
-          600: '#4b5563',
-          700: '#374151',
-          800: '#1f2937',
-          900: '#111827',
+          50: '#f8f8ff',
+          100: '#f0f0ff',
+          200: '#e0e0ff',
+          300: '#c0c0ff',
+          400: '#9090ff',
+          500: '#6060ff',
+          600: '#4040cc',
+          700: '#303099',
+          800: '#202066',
+          900: '#101033',
         },
-      },
-      fontFamily: {
-        sans: ['Poppins', 'system-ui', 'sans-serif'],
-        mono: ['Fira Code', 'monospace'],
-      },
-      animation: {
-        'spin-slow': 'spin 20s linear infinite',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-primary': 'linear-gradient(to right, var(--tw-gradient-stops))',
-        'gradient-accent': 'linear-gradient(45deg, var(--tw-gradient-stops))',
+        'gradient-primary': 'linear-gradient(to right, #00ffdd, #7700ff)',
+        'gradient-accent': 'linear-gradient(45deg, #ff0099, #ffff00)',
+        'gradient-dark': 'linear-gradient(to bottom right, #0a0a1f, #1a1a3f)',
       },
     },
   },
