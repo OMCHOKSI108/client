@@ -19,9 +19,9 @@ const ProjectCard = ({ project, index }) => {
       className="relative"
     >
       {/* Timeline Node */}
-      <div className="absolute left-0 top-6 w-3 h-3 md:w-4 md:h-4 rounded-full bg-[#00FF7F] -translate-x-1/2 z-10">
+      <div className="absolute left-0 top-6 w-3 h-3 md:w-4 md:h-4 rounded-full bg-sky-500 -translate-x-1/2 z-10">
         <motion.div
-          className="absolute inset-0 rounded-full bg-[#00FF7F]"
+          className="absolute inset-0 rounded-full bg-sky-500"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.5, 0.2, 0.5],
@@ -39,7 +39,7 @@ const ProjectCard = ({ project, index }) => {
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
         whileHover={{ scale: 1.02 }}
-        className="ml-6 md:ml-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden hover:border-[#00FF7F]/40 transition-all duration-300"
+        className="ml-6 md:ml-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden hover:border-sky-500/40 transition-all duration-300"
       >
         <div className="p-4 md:p-6">
           <div className="flex flex-col md:flex-row gap-4 md:gap-6">
@@ -59,7 +59,7 @@ const ProjectCard = ({ project, index }) => {
             <div className="flex-1 space-y-3 md:space-y-4">
               <div>
                 <h3 className="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">{project.title}</h3>
-                <p className="text-sm md:text-base text-[#00FF7F] mb-1">{project.role}</p>
+                <p className="text-sm md:text-base text-sky-500 mb-1">{project.role}</p>
                 <p className="text-xs md:text-sm text-gray-400">{project.type}</p>
               </div>
 
@@ -167,18 +167,17 @@ const ProjectTimeline = () => {
       live: "https://samvidhan-path.vercel.app",
       image: "/projects/movie.png"
     },
-      {
-        title: "Open CV",
-        role: "AI Engineer",
-        type: "AI-based Personal project",
-        description: "A project showcasing various OpenCV functionalities including image processing and computer vision tasks.",
-        techStack: ["Python", "OpenCV"],
-        github: "https://github.com/DEVang0876/Face-Detection",
-        live: "",
-        image: "/projects/cv.png"
-      }
-    ];
-  
+    {
+      title: "Open CV",
+      role: "AI Engineer",
+      type: "AI-based Personal project",
+      description: "A project showcasing various OpenCV functionalities including image processing and computer vision tasks.",
+      techStack: ["Python", "OpenCV"],
+      github: "https://github.com/DEVang0876/Face-Detection",
+      live: "",
+      image: "/projects/cv.png"
+    }
+  ];
 
   return (
     <section id="projects" className="py-12 md:py-20">
@@ -192,22 +191,22 @@ const ProjectTimeline = () => {
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 font-fira">
             Projects
           </h2>
-          <div className="w-20 md:w-24 h-1 bg-[#00FF7F] mx-auto" />
+          <div className="w-20 md:w-24 h-1 bg-sky-500 mx-auto" />
         </motion.div>
 
         <div ref={ref} className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-[#00FF7F]/20">
+          <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-sky-500/20">
             {/* Animated Line */}
             <motion.div
-              className="absolute top-0 left-0 w-full bg-[#00FF7F]"
+              className="absolute top-0 left-0 w-full bg-sky-500"
               style={{ 
                 height: lineHeight,
                 opacity: lineOpacity,
                 boxShadow: useTransform(
                   glowIntensity,
                   [0, 1],
-                  ['0 0 0px rgba(0, 255, 127, 0)', '0 0 30px rgba(0, 255, 127, 0.8)']
+                  ['0 0 0px rgba(14, 165, 233, 0)', '0 0 30px rgba(14, 165, 233, 0.8)']
                 )
               }}
             />
