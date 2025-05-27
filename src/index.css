@@ -5,24 +5,24 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ffff00 !important;
-  color: #000000;
+  background: #ffffff;
+  color: #1e293b;
 }
 
 section {
-  background: #ffff00 !important;
+  background: #f8fafc;
 }
 
 .bg-custom {
-  background: #ffff00 !important;
+  background: #ffffff;
 }
 
 .section-bg {
-  background: #ffff00 !important;
+  background: #f8fafc;
 }
 
 .accent-section {
-  background: #ff0000 !important;
+  background: #0ea5e9;
 }
 
 /* Override any dark backgrounds */

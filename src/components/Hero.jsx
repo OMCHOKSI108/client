@@ -49,7 +49,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center text-black bg-page">
+    <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-white via-light to-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Column */}
@@ -62,16 +62,16 @@ const Hero = () => {
             <motion.div variants={itemVariants} className="space-y-4">
               <motion.span
                 variants={itemVariants}
-                className="text-[#00FF7F] text-sm uppercase tracking-wider font-fira"
+                className="text-primary text-sm uppercase tracking-wider font-fira"
               >
                 AI and Data Science Engineer
               </motion.span>
               <motion.h1
                 variants={itemVariants}
-                className="text-3xl md:text-6xl font-bold font-fira"
+                className="text-3xl md:text-6xl font-bold font-fira text-dark"
               >
                 Hello I'm{' '}
-                <span className="text-[#00FF7F]">Devang</span>
+                <span className="text-primary">Devang</span>
               </motion.h1>
               <motion.p
                 variants={itemVariants}
@@ -167,4 +167,4 @@ const Hero = () => {
   );
 };
 
-export default Hero; 
+export default Hero;

@@ -1,0 +1,52 @@
+/* Reset the background colors */
+body, section, div {
+  background: white !important;
+}
+
+/* Professional color scheme */
+.text-primary {
+  color: #3b82f6 !important;
+}
+
+.bg-primary {
+  background-color: #3b82f6 !important;
+}
+
+.border-primary {
+  border-color: #3b82f6 !important;
+}
+
+.hover\:text-primary:hover {
+  color: #3b82f6 !important;
+}
+
+/* Card styles */
+.card {
+  background-color: white !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #3b82f6 !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb !important;
+}
+
+/* Section backgrounds */
+.section-alternate {
+  background-color: #f8fafc !important;
+}
+
+/* Text colors */
+h1, h2, h3, h4, h5, h6 {
+  color: #1e293b !important;
+}
+
+p {
+  color: #475569 !important;
+}

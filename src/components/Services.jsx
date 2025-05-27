@@ -18,21 +18,21 @@ const ServiceCard = ({ icon: Icon, title, description, index }) => {
       whileTap={{ scale: 0.95 }}
       className="relative group"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-[#00FF7F]/10 via-transparent to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-      <div className="relative bg-page border border-accent rounded-2xl p-6 md:p-8 hover:border-[#00FF7F]/40 transition-all duration-300">
-        <div className="text-[#00FF7F] mb-4 md:mb-6">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+      <div className="relative bg-white backdrop-blur-sm border border-primary/20 rounded-2xl p-6 md:p-8 hover:border-primary/40 transition-all duration-300">
+        <div className="text-primary mb-4 md:mb-6">
           <Icon className="w-8 h-8 md:w-12 md:h-12" />
         </div>
-        <h3 className="text-lg md:text-xl font-bold text-white mb-3 md:mb-4 relative inline-block">
+        <h3 className="text-lg md:text-xl font-bold text-dark mb-3 md:mb-4 relative inline-block">
           {title}
           <motion.span
-            className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00FF7F]"
+            className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"
             initial={{ scaleX: 0 }}
             whileHover={{ scaleX: 1 }}
             transition={{ duration: 0.3 }}
           />
         </h3>
-        <p className="text-sm md:text-base text-gray-300 leading-relaxed">{description}</p>
+        <p className="text-sm md:text-base text-gray-600 leading-relaxed">{description}</p>
       </div>
     </motion.div>
   );
@@ -44,54 +44,26 @@ const Services = () => {
     threshold: 0.1,
   });
 
-  // const services = [
-  //   {
-  //     icon: FaCode,
-  //     title: 'Data Analytics & Visualization',
-  //     description:
-  //       'Transforming raw data into actionable insights using Python, SQL, and data visualization tools like Tableau and Power BI.',
-  //   },
-  //   {
-  //     icon: FaPalette,
-  //     title: 'AI, Machine Learning & Data Science',
-  //     description:
-  //       'Building and deploying machine learning models using Python, TensorFlow, and PyTorch, with a focus on real-world applications.',
-  //   },
-  //   {
-  //     icon: FaLightbulb,
-  //     title: 'Tech Consulting & Mentorship',
-  //     description:
-  //       'Providing guidance on best practices in software development, data science, and AI, helping teams to innovate and excel.',
-  //   },
-  // ];
-
-
-const services = [
-  {
-    icon: FaChartBar,
-    title: 'Data Analytics & Visualization',
-    description:
-      'Transforming raw data into actionable insights using Python, SQL, and data visualization tools like Tableau and Power BI.',
-  },
-  {
-    icon: FaBrain,
-    title: 'AI, Machine Learning & Data Science',
-    description:
-      'Building and deploying machine learning models using Python, TensorFlow, and PyTorch, with a focus on real-world applications.',
-  },
-  {
-    icon: FaChalkboardTeacher,
-    title: 'Tech Consulting & Mentorship',
-    description:
-      'Providing guidance on best practices in software development, data science, and AI, helping teams to innovate and excel.',
-  },
-  /*{
-    icon: FaPaintBrush,
-    title: 'Graphic Designing',
-    description:
-      'Crafting visually engaging designs for web, social media, and branding using tools like Adobe Photoshop, Illustrator, and Figma.',
-  }*/
-];
+  const services = [
+    {
+      icon: FaChartBar,
+      title: 'Data Analytics & Visualization',
+      description:
+        'Transforming raw data into actionable insights using Python, SQL, and data visualization tools like Tableau and Power BI.',
+    },
+    {
+      icon: FaBrain,
+      title: 'AI, Machine Learning & Data Science',
+      description:
+        'Building and deploying machine learning models using Python, TensorFlow, and PyTorch, with a focus on real-world applications.',
+    },
+    {
+      icon: FaChalkboardTeacher,
+      title: 'Tech Consulting & Mentorship',
+      description:
+        'Providing guidance on best practices in software development, data science, and AI, helping teams to innovate and excel.',
+    },
+  ];
 
   return (
     <section id="services" className="py-12 md:py-20">
@@ -147,4 +119,4 @@ const services = [
   );
 };
 
-export default Services; 
+export default Services;

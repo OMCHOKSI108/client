@@ -65,11 +65,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-page border-b border-accent">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-black">
+          <Link to="/" className="text-2xl font-bold text-dark">
             {"<Devang />"}
           </Link>
 
@@ -84,14 +84,14 @@ const Navbar = () => {
                 <Link
                   to={link.path}
                   onClick={(e) => handleSectionClick(e, link.path)}
-                  className="text-black hover:text-accent transition-colors duration-300 text-sm tracking-wider uppercase font-fira"
+                  className="text-gray-600 hover:text-primary transition-colors duration-300 text-sm tracking-wider uppercase font-fira"
                 >
                   {link.name}
                 </Link>
               </motion.div>
             ))}
             <motion.button
-              className="px-4 py-2 border-2 border-accent text-black hover:bg-accent hover:text-black transition-colors duration-300 font-fira"
+              className="px-4 py-2 border-2 border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors duration-300 font-fira"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
