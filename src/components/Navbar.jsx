@@ -65,15 +65,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      scrolled ? 'bg-black/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-dark">
-            {"<Devang />"}
-          </Link>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="text-2xl font-bold font-poppins"
+          >
+            <Link to="/" className="text-white hover:text-[#00FF7F] transition-colors duration-300">
+              Devang<span className="text-[#00FF7F]">.</span>
+            </Link>
+          </motion.div>
 
-          {/* Desktop Menu */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <motion.div
@@ -84,18 +92,21 @@ const Navbar = () => {
                 <Link
                   to={link.path}
                   onClick={(e) => handleSectionClick(e, link.path)}
-                  className="text-gray-600 hover:text-primary transition-colors duration-300 text-sm tracking-wider uppercase font-fira"
+                  className="text-white hover:text-[#00FF7F] transition-colors duration-300 text-sm tracking-wider uppercase font-fira"
                 >
                   {link.name}
                 </Link>
               </motion.div>
             ))}
             <motion.button
-              className="px-4 py-2 border-2 border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors duration-300 font-fira"
+              className="px-4 py-2 border-2 border-[#00FF7F] text-[#00FF7F] rounded-md hover:bg-[#00FF7F] hover:text-[#121212] transition-colors duration-300 font-fira"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                window.location.href = '/hire-me';
+              }}
             >
-              Resume
+              Hire me
             </motion.button>
           </div>
 
@@ -169,4 +180,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar; 

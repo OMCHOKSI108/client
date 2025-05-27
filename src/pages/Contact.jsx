@@ -73,7 +73,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#000B18] via-[#000B2E] to-[#000B3D]">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800">
       <Navbar />
       <main className="pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -208,4 +208,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact; 

@@ -2,127 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #ffffff;
-  color: #1e293b;
-}
-
-section {
-  background: #f8fafc;
-}
-
-.bg-custom {
-  background: #ffffff;
-}
-
-.section-bg {
-  background: #f8fafc;
-}
-
-.accent-section {
-  background: #0ea5e9;
-}
-
-/* Override any dark backgrounds */
-[class*="bg-dark"], [class*="bg-gray"], [class*="bg-black"], [class*="backdrop-blur"] {
-  background: #ffff00 !important;
-}
-
-.card {
-  background-color: #ffff66 !important;
-  border: 1px solid #ff0000;
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  transition: all 0.3s;
-}
-
-.card:hover {
-  box-shadow: 0 10px 15px -3px rgba(255, 0, 0, 0.2);
-}
-
-.btn-primary {
-  background-color: #ff0000 !important;
-  color: white;
-}
-
-.btn-secondary {
-  background-color: #ff3300 !important;
-  color: white;
-}
-
-.gradient-text {
-  color: #ff0000;
-}
-
 @layer base {
-  :root {
-    --color-primary: #ffff00;
-    --color-secondary: #ff0000;
-    --color-accent: #ff3300;
-    --color-highlight: #ff0066;
-  }
-
   html {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
   }
 
   body {
-    @apply min-h-screen text-black;
-    background-color: #ffff00;
-    background-color: #ffff00;
-    color: #000000;
+    @apply bg-dark text-white;
   }
 
-  /* Neon text effect for headings */
-  h1, h2, h3 {
-    @apply font-bold;
-    text-shadow: 0 0 10px var(--color-primary),
-                0 0 20px var(--color-primary),
-                0 0 30px var(--color-primary);
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
   }
 
-  /* Button styling */
-  .btn {
-    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
-  }
-
-  .btn-primary {
-    @apply bg-primary text-dark hover:bg-primary-light hover:shadow-lg hover:shadow-primary/50;
-  }
-
-  .btn-secondary {
-    @apply bg-secondary text-white hover:bg-secondary-light hover:shadow-lg hover:shadow-secondary/50;
-  }
-
-  .btn-accent {
-    @apply bg-accent text-dark hover:bg-accent-light hover:shadow-lg hover:shadow-accent/50;
-  }
-
-  /* Card styling */
-  .card {
-    @apply bg-dark-lighter rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20;
-    border: 1px solid var(--color-primary);
-  }
-
-  /* Gradient text */
-  .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-primary;
-  }
-
-  /* Add solid background colors instead of gradients */
-  .bg-custom {
-    background-color: #ffff00;
-  }
-
-  .section-bg {
-    background-color: #ffff66;
-  }
-
-  .accent-section {
-    background-color: #ff0000;
+  code, pre, .font-mono {
+    font-family: 'Fira Code', monospace;
   }
 }
 
