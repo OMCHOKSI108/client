@@ -76,7 +76,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold font-poppins"
           >
-            <Link to="/" className="text-white hover:text-red-500 transition-colors duration-300">
+            <Link to="/" className="text-white hover:text-sky-500 transition-colors duration-300">
               Devang<span className="text-red-500">.</span>
             </Link>
           </motion.div>
