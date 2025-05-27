@@ -18,15 +18,15 @@ const ServiceCard = ({ icon: Icon, title, description, index }) => {
       whileTap={{ scale: 0.95 }}
       className="relative group"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-[#00FF7F]/10 via-transparent to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-      <div className="relative bg-gradient-to-br from-gray-800/50 via-gray-900/50 to-black/50 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 hover:border-[#00FF7F]/40 transition-all duration-300">
-        <div className="text-[#00FF7F] mb-4 md:mb-6">
+      <div className="absolute inset-0 bg-gradient-to-br from-sky-500/10 via-transparent to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+      <div className="relative bg-gradient-to-br from-gray-800/50 via-gray-900/50 to-black/50 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 hover:border-sky-500/40 transition-all duration-300">
+        <div className="text-sky-500 mb-4 md:mb-6">
           <Icon className="w-8 h-8 md:w-12 md:h-12" />
         </div>
         <h3 className="text-lg md:text-xl font-bold text-white mb-3 md:mb-4 relative inline-block">
           {title}
           <motion.span
-            className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00FF7F]"
+            className="absolute bottom-0 left-0 w-full h-0.5 bg-sky-500"
             initial={{ scaleX: 0 }}
             whileHover={{ scaleX: 1 }}
             transition={{ duration: 0.3 }}
@@ -137,7 +137,7 @@ const services = [
             onClick={() => {
               window.location.href = '/contact';
             }}
-            className="px-6 md:px-8 py-2 md:py-3 text-sm md:text-base bg-[#00FF7F] text-black font-bold rounded-lg hover:bg-[#00cc66] transition-colors duration-300"
+            className="px-6 md:px-8 py-2 md:py-3 text-sm md:text-base bg-sky-500 text-black font-bold rounded-lg hover:bg-sky-600 transition-colors duration-300"
           >
             Let's Work Together
           </motion.button>

@@ -20,9 +20,9 @@ const ProjectCard = ({ project, index }) => {
       className="relative"
     >
       {/* Timeline Node */}
-      <div className="absolute left-0 top-6 w-3 h-3 md:w-4 md:h-4 rounded-full bg-[#00FF7F] -translate-x-1/2 z-10">
+      <div className="absolute left-0 top-6 w-3 h-3 md:w-4 md:h-4 rounded-full bg-sky-500 -translate-x-1/2 z-10">
         <motion.div
-          className="absolute inset-0 rounded-full bg-[#00FF7F]"
+          className="absolute inset-0 rounded-full bg-sky-500"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.5, 0.2, 0.5],
@@ -39,8 +39,7 @@ const ProjectCard = ({ project, index }) => {
       <motion.div
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
-        whileHover={{ scale: 1.02 }}
-        className="ml-6 md:ml-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden hover:border-[#00FF7F]/40 transition-all duration-300"
+        whileHover={{ scale: 1.02 }}          className="ml-6 md:ml-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden hover:border-sky-500/40 transition-all duration-300"
       >
         <div className="p-4 md:p-6">
           <div className="flex flex-col md:flex-row gap-4 md:gap-6">
@@ -71,7 +70,7 @@ const ProjectCard = ({ project, index }) => {
                 {project.techStack.map((tech, index) => (
                   <span
                     key={index}
-                    className="px-2 md:px-3 py-1 bg-[#00FF7F]/10 text-[#00FF7F] rounded-full text-xs font-fira"
+                    className="px-2 md:px-3 py-1 bg-sky-500/10 text-sky-500 rounded-full text-xs font-fira"
                   >
                     {tech}
                   </span>
@@ -84,7 +83,7 @@ const ProjectCard = ({ project, index }) => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-1.5 md:gap-2 text-white hover:text-[#00FF7F] transition-colors duration-300"
+                  className="group flex items-center gap-1.5 md:gap-2 text-white hover:text-sky-500 transition-colors duration-300"
                 >
                   <FiGithub className="w-4 h-4 md:w-5 md:h-5" />
                   <span className="text-xs md:text-sm font-fira">GitHub</span>
@@ -295,7 +294,7 @@ const projects = [
             <p className="text-sm md:text-lg text-gray-400 max-w-2xl mx-auto font-poppins">
               Explore my latest projects and contributions to the tech community
             </p>
-            <div className="w-20 md:w-24 h-1 bg-[#00FF7F] mx-auto mt-3 md:mt-4" />
+            <div className="w-20 md:w-24 h-1 bg-sky-500 mx-auto mt-3 md:mt-4" />
           </motion.div>
 
           <div ref={ref} className="relative">

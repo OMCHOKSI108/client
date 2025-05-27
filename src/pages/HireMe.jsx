@@ -102,10 +102,10 @@ const HireMe = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-[#1a1a1a] border border-gray-700 rounded-lg p-8 hover:border-[#00FF7F] transition-colors duration-300"
+                className="bg-[#1a1a1a] border border-gray-700 rounded-lg p-8 hover:border-sky-500 transition-colors duration-300"
               >
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-12 h-12 bg-[#00FF7F] rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-sky-500 rounded-full flex items-center justify-center">
                     <service.icon className="text-[#121212] w-6 h-6" />
                   </div>
                   <h3 className="text-xl font-bold text-white font-fira">
@@ -118,7 +118,7 @@ const HireMe = () => {
                 <ul className="space-y-3">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-center space-x-2 text-gray-300 font-poppins">
-                      <span className="w-2 h-2 bg-[#00FF7F] rounded-full" />
+                      <span className="w-2 h-2 bg-sky-500 rounded-full" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -141,7 +141,7 @@ const HireMe = () => {
             </p>
             <a
               href="/contact"
-              className="inline-block px-8 py-3 bg-[#00FF7F] text-[#121212] rounded-md hover:bg-[#00cc66] transition-colors duration-300 font-fira"
+              className="inline-block px-8 py-3 bg-sky-500 text-[#121212] rounded-md hover:bg-sky-600 transition-colors duration-300 font-fira"
             >
               Get in Touch
             </a>
