@@ -56,8 +56,18 @@ const CertificationCard = ({ data, index }) => {
     }
   };
 
-
-
+  const getStatusClasses = (status) => {
+    switch (status) {
+      case 'Completed':
+        return 'bg-sky-500/20 text-sky-400';
+      case 'In Progress':
+        return 'bg-yellow-500/20 text-yellow-400';
+      case 'Pending':
+        return 'bg-gray-500/20 text-gray-400';
+      default:
+        return 'bg-red-500/20 text-red-400';
+    }
+  };
 
   const getIcon = (type) => {
     switch (type.toLowerCase()) {
@@ -197,4 +207,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications; 
+export default Certifications;

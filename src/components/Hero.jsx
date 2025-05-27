@@ -53,12 +53,12 @@ const Hero = () => {
             className="space-y-6 md:space-y-8 order-2 md:order-1"
           >
             <motion.div variants={itemVariants} className="space-y-4">
-              <motion.span className="text-red-500 text-sm uppercase tracking-wider font-fira">
+              <motion.span className="text-sky-500 text-sm uppercase tracking-wider font-fira">
                 AI and Data Science Engineer
               </motion.span>
               <motion.h1 className="text-3xl md:text-6xl font-bold font-fira">
                 Hello I'm{' '}
-                <span className="text-red-500">Devang</span>
+                <span className="text-sky-500">Devang</span>
               </motion.h1>
               <motion.p className="text-base md:text-lg text-gray-300 max-w-lg font-fira">
                 I excel at crafting elegant digital experiences that combine
@@ -101,7 +101,7 @@ const Hero = () => {
           <motion.div className="relative order-1 md:order-2 mb-8 md:mb-0">
             <div className="relative w-[20rem] md:w-[26rem] h-[20rem] md:h-[26rem] mx-auto">
               {/* Neon glow effect */}
-              <div className="absolute inset-0 bg-red-500/20 blur-xl" />
+              <div className="absolute inset-0 bg-sky-500/20 blur-xl" />
               
               {/* Rotating circles */}
               <motion.div
@@ -116,14 +116,14 @@ const Hero = () => {
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-6 border-2 border-dotted border-red-500 rounded-full"
+                className="absolute inset-6 border-2 border-dotted border-sky-500 rounded-full"
                 style={{
                   clipPath: 'inset(50% 0 0 0)',
                 }}
               />
 
               {/* Image container */}
-              <div className="absolute inset-16 md:inset-20 rounded-full overflow-hidden border-2 border-red-500/30 flex items-center justify-center">
+              <div className="absolute inset-16 md:inset-20 rounded-full overflow-hidden border-2 border-sky-500/30 flex items-center justify-center">
                 <img
                   src={dhairya}
                   alt="Devang"
