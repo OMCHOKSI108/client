@@ -12,10 +12,23 @@ import { Link } from 'react-router-dom';
 import dhairya from '../assets/dhairya-portrait.png';
 
 const Hero = () => {
+
+  //const [showFeedback, setShowFeedback] = useState(false);
+
+  // useEffect(() => {
+  //   const hasSubmittedFeedback = localStorage.getItem('hasSubmittedFeedback');
+  //   if (!hasSubmittedFeedback) {
+  //     const timer = setTimeout(() => {
+  //       setShowFeedback(true);
+  //     }, 10000); // Show after 10 seconds
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, []);  
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/DEVang0876' },
     { icon: FaLinkedin, href: 'https://www.linkedin.com/in/devang0876/' },
     { icon: FaInstagram, href: 'https://www.instagram.com/__deviiinee_/' },
+     // { icon: FaDiscord, href: 'https://discord.com/users/dhairyagothi' },
     { icon: FaXTwitter, href: 'https://x.com/DevangDhandhuk1' },
   ];
 
@@ -134,6 +147,13 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
+            {/* Feedback Components */}
+      {/* <FeedbackModal
+        isOpen={showFeedback}
+        onClose={() => setShowFeedback(false)}
+      /> */}
+      {/* <FeedbackList onOpenFeedback={() => setShowFeedback(true)} /> */}
+      
     </section>
   );
 };
